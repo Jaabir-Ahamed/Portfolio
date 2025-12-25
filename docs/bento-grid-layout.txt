@@ -1,0 +1,148 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                    BENTO GRID LAYOUT - DESKTOP VIEW               ║
+║                     (4 columns × flexible rows)                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────┬─────────────────────────────────┐
+│                                 │                                 │
+│                                 │         TECH STACK              │
+│         PROFILE                 │      (Marquee Animation)        │
+│      (Name, Bio, CTA)           │    React | Node | Python...     │
+│                                 │                                 │
+│                                 ├─────────────┬───────────────────┤
+│                                 │             │                   │
+│                                 │  PROJECT 1  │    GITHUB         │
+│                                 │   (Large)   │    (Social)       │
+├─────────────┬───────────────────┤             │                   │
+│             │                   ├─────────────┼───────────────────┤
+│  PROJECT 2  │    PROJECT 3      │  LINKEDIN   │   LOCATION        │
+│             │                   │  (Social)   │   & TIMEZONE      │
+│             │                   │             │                   │
+├─────────────┴───────────────────┴─────────────┼───────────────────┤
+│                                                │                   │
+│              (Additional items...)             │     STATUS        │
+│                                                │  (Availability)   │
+│                                                │                   │
+└────────────────────────────────────────────────┴───────────────────┘
+
+═══════════════════════════════════════════════════════════════════════
+
+GRID ITEM SIZES:
+
+┌────────────┬────────────┐
+│  Profile   │ Tech Stack │    Profile:    2 cols × 2 rows (Large)
+│            │────────────│    Tech Stack: 2 cols × 1 row  (Wide)
+│            │ GitHub | L │    Project 1:  1 col  × 2 rows (Tall)
+└────────────┴────────────┘    Others:     1 col  × 1 row  (Small)
+
+═══════════════════════════════════════════════════════════════════════
+
+TABLET VIEW (2 columns):
+
+┌─────────────────────────────────┐
+│           PROFILE               │
+│        (Full Width)             │
+│                                 │
+├─────────────────────────────────┤
+│        TECH STACK               │
+│        (Full Width)             │
+├────────────────┬────────────────┤
+│   PROJECT 1    │   PROJECT 2    │
+│                │                │
+├────────────────┼────────────────┤
+│   PROJECT 3    │    GITHUB      │
+├────────────────┼────────────────┤
+│   LINKEDIN     │   LOCATION     │
+├────────────────┼────────────────┤
+│    STATUS      │   (etc...)     │
+└────────────────┴────────────────┘
+
+═══════════════════════════════════════════════════════════════════════
+
+MOBILE VIEW (1 column):
+
+┌──────────────────┐
+│     PROFILE      │
+│                  │
+├──────────────────┤
+│   TECH STACK     │
+│                  │
+├──────────────────┤
+│   PROJECT 1      │
+│                  │
+├──────────────────┤
+│   PROJECT 2      │
+│                  │
+├──────────────────┤
+│   PROJECT 3      │
+│                  │
+├──────────────────┤
+│     GITHUB       │
+│                  │
+├──────────────────┤
+│    LINKEDIN      │
+│                  │
+├──────────────────┤
+│    LOCATION      │
+│                  │
+├──────────────────┤
+│     STATUS       │
+│                  │
+└──────────────────┘
+
+═══════════════════════════════════════════════════════════════════════
+
+ANIMATION SEQUENCE (on page load):
+
+  0ms:   [All items hidden]
+  
+  200ms: ┌─────┐
+         │  1  │  Profile fades in
+         └─────┘
+         
+  300ms: ┌─────┐ ┌─────┐
+         │  1  │ │  2  │  Tech Stack fades in
+         └─────┘ └─────┘
+         
+  400ms: ┌─────┐ ┌─────┐ ┌─────┐
+         │  1  │ │  2  │ │  3  │  Project 1 fades in
+         └─────┘ └─────┘ └─────┘
+         
+  500ms: Items 1, 2, 3, 4 visible...
+  600ms: Items 1, 2, 3, 4, 5 visible...
+  ...and so on (100ms stagger between each)
+
+═══════════════════════════════════════════════════════════════════════
+
+HOVER EFFECTS:
+
+Normal State:
+┌──────────────┐
+│   Card       │  • Border: white/10 (subtle)
+│              │  • Scale: 1.0
+│   Content    │  • Shadow: xl
+└──────────────┘
+
+Hover State:
+┌══════════════┐
+║   Card       ║  • Border: white/20 (brighter) ✨
+║              ║  • Scale: 1.02 (lifted) ⬆️
+║   Content    ║  • Shadow: 2xl (deeper)
+└══════════════┘  • Glow: overlay appears
+
+Transition: 300ms ease-out
+
+═══════════════════════════════════════════════════════════════════════
+
+KEY FEATURES:
+
+✓ Stagger-fade animation on load
+✓ Hover effects: scale + border brighten
+✓ Infinite marquee for tech stack
+✓ Responsive grid (1/2/4 columns)
+✓ Glassmorphism design
+✓ Clickable social links
+✓ Status indicators with animations
+
+═══════════════════════════════════════════════════════════════════════
+
