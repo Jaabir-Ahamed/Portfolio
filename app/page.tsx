@@ -756,10 +756,10 @@ export default function Home() {
               animated={false}
             >
               <h2 className="text-4xl font-bold text-zinc-100 tracking-tight mb-4">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
               <p className="text-lg text-zinc-400 tracking-tight leading-relaxed mb-8 max-w-xl mx-auto">
-                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+                I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
               </p>
 
               {/* Contact Buttons */}

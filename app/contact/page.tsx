@@ -16,7 +16,7 @@ export default function ContactPage() {
                 Get in Touch
               </h1>
               <p className="text-xl text-zinc-400 tracking-tight">
-                I'm always open to discussing new opportunities and interesting projects.
+                I&apos;m always open to discussing new opportunities and interesting projects.
               </p>
             </div>
 
